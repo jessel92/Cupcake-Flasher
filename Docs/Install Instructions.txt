@@ -1,0 +1,12 @@
+Install Instructions
+
+Completely all prompted installers. 
+
+WinAVR will be installed, please ensure all of the defaults remain checked.
+
+This installs "avrdude" which is required to run the Cupcake Flasher.
+
+HAVE FUN!
+
+- The Mad Noodle
+
