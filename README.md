@@ -5,6 +5,8 @@ v0.0.1 ALPHA (WIP)
 
 _**Designed By The Mad Noodle Prototypes & Roboto.NYC**_
 
+![Cupcake Flasher Screen Shot](https://static.wixstatic.com/media/59d0ff_f8962ed15639492c8ae3b08d66449426~mv2.jpg)
+
 Instructions
 ---
 
@@ -14,9 +16,13 @@ Instructions
 - avrdude CLI (included in the `Drivers` folder)
 
 
-#### **Install Drivers**
-1. Navigate to the install folder for Cupcake Flasher
-2. In the "`Drivers`" folder install "`WinAVR-20100110-install.exe`"
+#### **Install**
+- Launch `Cupcake Flasher Setup.exe`
+- Installer will lauch `WinAVR` installer automatically
+- Allow `WinAVR` and `AVRdude` to insall
+- While those are installing `WinAVR` ensure thate you leave ALL deault options checked
+- Once complete, Launch `Cupcake Flasher` from either your _**Desktop shortcut**_ or from your _**Start menu**_.
+
 
 ###### Test
 - Open CMD and type `avrdude`
