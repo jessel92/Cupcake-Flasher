@@ -1,3 +1,16 @@
+'''
+======================================================================================================================
+Cupcake Flasher
+
+by The Mad Noodle (Jesse Leventhal) & Roboto.NYC
+
+v0.0.1 ALPHA
+
+======================================================================================================================
+'''
+
+
+
 import os
 import subprocess
 import platform
@@ -30,6 +43,25 @@ def uploader():
     elif fw_var.get() == "Motherboard Firmware v3.5":
         os.system("avrdude -c usbtiny -p m644p -U flash:w:firmware/MB-rrmbv12-v3.5.hex:a")
 
+    elif fw_var.get() == "Extruder Controller Firmware v2.6 (Stepper | No Relay)":
+        os.system("avrdude -c usbtiny -p m168 -U flash:w:firmware/EC-ecv22-v2.6-stepper-no-relays.hex:a")
+
+    elif fw_var.get() == "Extruder Controller Firmware v2.6 (Stepper | Relay)":
+        os.system("avrdude -c usbtiny -p m168 -U flash:w:firmware/EC-ecv22-v2.6-stepper-relays.hex:a")
+
+    elif fw_var.get() == "Extruder Controller Firmware v3.0 (No Relay)":
+        os.system("avrdude -c usbtiny -p m168 -U flash:w:firmware/EC-ecv22-v3.0-no-relays.hex:a")
+
+    elif fw_var.get() == "Extruder Controller Firmware v3.0 (Relay)":
+        os.system("avrdude -c usbtiny -p m168 -U flash:w:firmware/EC-ecv22-v3.0-relays.hex:a")
+
+    elif fw_var.get() == "Extruder Controller Firmware v3.0 (Stepper | No Relay)":
+        os.system("avrdude -c usbtiny -p m168 -U flash:w:firmware/EC-ecv22-v3.0-stepper-no-relays.hex:a")
+
+    elif fw_var.get() == "Extruder Controller Firmware v3.0 (Stepper | Relay)":
+        os.system("avrdude -c usbtiny -p m168 -U flash:w:firmware/EC-ecv22-v3.0-stepper-relays.hex:a")
+
+    mb.showinfo("DONE!", "Flashing is Complete!")
 
 window = Tk()
 
@@ -64,7 +96,7 @@ option = OptionMenu(main_frame, fw_var,
 option.grid(column=1, row=1, padx=5, pady=5)
 
 
-flash_btn = Button(main_frame, text="flash", command=uploader)
+flash_btn = Button(main_frame, text="Flash", command=uploader)
 flash_btn.grid(column=1, row=2, padx=5, pady=5)
 
 
