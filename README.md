@@ -13,7 +13,7 @@ Instructions
 #### Requirements
 
 - USBtiny ISP AVR Programer
-- avrdude CLI (included in the `Drivers` folder)
+- avrdude CLI (included in the `Drivers` folder or automaticaly installed if useing `Cupcake Flasher Setup.exe`)
 
 
 #### **Install**
