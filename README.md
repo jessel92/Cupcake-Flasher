@@ -34,6 +34,6 @@ Instructions
 1. Open Cupcake Flasher
 2. From drop down menu, select your desired firmware
 
-    _Note: This includes firmware for the both the RepRap Mother Board and The Extruder Controller
+    >_Note: This includes firmware for the both the RepRap Mother Board and The Extruder Controller
     The default we use is `Motherboard Firmware v2.2`  & `Extruder Controller Firmware v3.0 (Relay)`_
  3. Connect your USBtiny ISP to the board and click **Flash**
